@@ -1,0 +1,38 @@
+# Credentials and local configurations
+.env
+.env.*
+!.env.example
+*secret*
+*credential*
+*.key
+*.pem
+id_rsa
+id_ed25519
+
+# ROS and colcon generated data
+build/
+install/
+log/
+rosbag*/
+*.db3
+*.mcap
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Robot data: not publishable by default
+*.bag
+*.bag.active
+*.sqlite3
+data/raw/
+data/recordings/
+data/outputs/
+
+# Local and OS files
+.DS_Store
+.vscode/
+.idea/
